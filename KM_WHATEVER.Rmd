@@ -200,7 +200,6 @@ d <- dist(HierarchyReview,method="euclidean")
 hcl <- hclust(d,method="complete")
 sub_grp <- cutree(hcl,k=4)
 fviz_cluster(list(data=HierarchyReview[-1],cluster=sub_grp))
-css(sub_grp)
 ```
 
 
